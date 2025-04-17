@@ -5,56 +5,141 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SO1VIETLAM</title>
   <style>
-    body, html {
+    body {
       margin: 0;
-      padding: 0;
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
     }
     .hero {
-      background-image: url('https://source.unsplash.com/1600x900/?mountains,forest');
+      background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
       background-size: cover;
       background-position: center;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
       color: white;
+      text-align: left;
+      padding: 160px 40px 60px 40px;
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 20px;
+      max-width: 800px;
+    }
+    .description {
+      padding: 60px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .description-text {
+      max-width: 50%;
+    }
+    .description-text h2 {
+      font-size: 28px;
+    }
+    .description-text p {
+      font-size: 16px;
+    }
+    .stats {
+      background-color: #f1f1f1;
+      padding: 40px;
+      display: flex;
+      justify-content: space-around;
       text-align: center;
     }
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: 1;
+    .stat h3 {
+      font-size: 28px;
+      margin: 0;
     }
-    .hero-text {
-      position: relative;
-      z-index: 2;
-      max-width: 800px;
-      padding: 20px;
+    .stat p {
+      margin: 5px 0 0;
+      font-size: 16px;
     }
-    .hero-text h1 {
-      font-size: 3em;
-      margin-bottom: 0.3em;
+    .highlight {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
     }
-    .hero-text p {
-      font-size: 1.25em;
+    .contact {
+      background-color: #0074D9;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+    }
+    .contact .text {
+      width: 30%;
+    }
+    .contact img {
+      height: 180px;
+      border-radius: 4px;
+    }
+    .contact .social {
+      width: 30%;
+    }
+    .contact .social h4 {
+      margin-bottom: 10px;
+    }
+    .contact .social ul {
+      list-style: none;
+      padding: 0;
+    }
+    .contact .social ul li {
+      margin: 6px 0;
     }
   </style>
 </head>
 <body>
 
-<div class="hero">
-  <div class="overlay"></div>
-  <div class="hero-text">
-    <h1>한국에서 일하고 싶으신 당신,</h1>
+  <div class="hero">
+    <h1>한국에서 일하고 싶으신 당신</h1>
     <p>우리가 취업과 한국어 교육을 도와드립니다.</p>
   </div>
-</div>
+
+  <div class="description">
+    <div class="description-text">
+      <h2>인력 채용 및 훈련 분야의 선도적 전문가</h2>
+      <p>베트남 최고의 구인구직 회사인 우리는 베트남과 한국에서 일하고 싶어하는 우수한 인력을 모집하고 교육하는 서비스를 제공합니다.</p>
+    </div>
+    <img src="/static/images/vietnam-businessman.jpg" alt="정장 입은 남성" style="height: 250px; border-radius: 6px;">
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <h3>15년</h3>
+      <p>수년간의 경험</p>
+    </div>
+    <div class="stat">
+      <h3>500개 이상</h3>
+      <p>자격을 갖춘 후보자</p>
+    </div>
+    <div class="stat">
+      <h3>98%</h3>
+      <p>고객 만족도</p>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <h2>당신의 요구에 맞는 직업과 회사를 연결해드립니다.</h2>
+    <p>최고의 한국어 교육강사를 구성하고 있으며 다른지역에 있는 분들을 위해서 교육기간동안 무료숙박을 제공해드립니다.</p>
+  </div>
+
+  <div class="contact">
+    <div class="text">
+      <p>우리는 고품질 채용 및 교육 서비스를 제공합니다. 자세한 내용을 알아보려면 저희에게 문의하세요.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1" alt="직업 상담 이미지">
+    <div class="social">
+      <h4>연결하다</h4>
+      <ul>
+        <li>페이스북</li>
+        <li>Zalo</li>
+        <li>카카오톡</li>
+      </ul>
+    </div>
+  </div>
 
 </body>
 </html>
